@@ -1,6 +1,298 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Official support and privacy information for GenreSense."><title>GenreSense Support & Privacy</title><style>
-:root{color-scheme:light dark;--bg:#f5f7fb;--card:#ffffffd9;--text:#152033;--muted:#5d687b;--line:#1520331c;--a:#2979ff;--b:#6b5cff}@media(prefers-color-scheme:dark){:root{--bg:#090d16;--card:#121928d9;--text:#f4f7ff;--muted:#aab4c7;--line:#ffffff1c}}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 15% 0%,#2979ff2b,transparent 34rem),radial-gradient(circle at 90% 15%,#6b5cff26,transparent 30rem),var(--bg)}a{color:var(--a);text-decoration:none}.wrap{width:min(920px,calc(100% - 32px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:750}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b))}.links{display:flex;gap:18px;font-size:14px}.hero{padding:72px 0 44px}.eyebrow{font-size:13px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--a)}h1{font-size:clamp(42px,8vw,76px);line-height:1.02;letter-spacing:-.055em;margin:14px 0 22px}.lead{font-size:clamp(18px,3vw,22px);color:var(--muted);max-width:700px}.button{display:inline-flex;margin-top:18px;padding:12px 18px;border-radius:999px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));font-weight:700}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 60px}.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:var(--card);backdrop-filter:blur(18px);box-shadow:0 24px 70px #2637591f}.wide{grid-column:1/-1}h2{font-size:26px;margin:0 0 14px}h3{font-size:18px;margin:26px 0 6px}.card p,.card li{color:var(--muted)}ul{padding-left:20px}.note{padding:16px 18px;border-left:3px solid var(--a);border-radius:10px;background:#2979ff14}footer{padding:8px 0 42px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}@media(max-width:700px){.links{display:none}.hero{padding-top:44px}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.card{padding:22px}}
-</style></head><body><div class="wrap"><nav class="nav"><div class="brand"><span class="mark">G</span>GenreSense</div><div class="links"><a href="#support">Support</a><a href="#privacy">Privacy</a></div></nav><header class="hero"><div class="eyebrow">GenreSense for iPhone</div><h1>Hear the music.<br>Explore its genre.</h1><p class="lead">Official support and privacy information for GenreSense, an on-device music genre recognition app.</p><a class="button" href="mailto:sawyer89757@gmail.com">Contact Support</a></header><main class="grid">
-<section class="card" id="support"><h2>Support</h2><p>Need help with GenreSense? Email us with your device model, iOS version, and a short description of the problem.</p><p><strong>Email:</strong><br><a href="mailto:sawyer89757@gmail.com">sawyer89757@gmail.com</a></p><p>We aim to respond as soon as reasonably possible.</p></section>
-<section class="card"><h2>Quick tips</h2><ul><li>Allow microphone access when prompted.</li><li>Play music out loud and place your iPhone near the speaker.</li><li>Headphone or other apps' internal audio cannot be heard by the microphone.</li><li>Reduce background noise for clearer results.</li></ul></section>
-<section class="card wide" id="privacy"><div class="eyebrow">Last updated June 20, 2026</div><h2>Privacy Policy</h2><p>GenreSense is designed to recognize music genres while keeping audio processing on your device.</p><h3>Information we collect</h3><p>GenreSense does not require an account and does not include advertising or third-party analytics SDKs. We do not collect or upload your microphone recordings, recognition history, or genre results to our servers.</p><h3>Microphone and audio</h3><p>Microphone access is used only when you start genre recognition. Audio is analyzed on your device. Recognition clips and history may be saved locally so you can revisit them. They are not uploaded by GenreSense.</p><h3>Local data</h3><p>App preferences, recognition history, explored genres, and saved audio clips are stored locally. You can remove history within the app or delete the app to remove its locally stored data.</p><h3>Purchases</h3><p>Optional in-app purchases are processed by Apple through the App Store. GenreSense does not receive or store your payment-card details. Apple's handling of purchase information is governed by Apple's privacy policy.</p><h3>External services and links</h3><p>GenreSense may open services such as Apple Music, Spotify, Wikipedia, or Wikimedia when you choose a related link. Those services operate under their own privacy policies. Recognition itself does not require an internet connection.</p><h3>Children's privacy</h3><p>GenreSense does not knowingly collect personal information from children.</p><h3>Changes to this policy</h3><p>We may update this policy when the app or legal requirements change. The latest version will be published here with its effective date.</p><h3>Contact</h3><p>Questions about support or privacy can be sent to <a href="mailto:sawyer89757@gmail.com">sawyer89757@gmail.com</a>.</p><p class="note">Genre recognition results are probabilistic and may be affected by recording conditions, background noise, and overlapping genre traits.</p></section></main><footer><p>&copy; 2026 GenreSense. All rights reserved.</p></footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Official support and privacy information for GenreSense.">
+  <title>GenreSense Support & Privacy</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f8fb;
+      --surface: #ffffffd9;
+      --surface-strong: #ffffff;
+      --text: #151f2e;
+      --muted: #5e6878;
+      --line: #1620331f;
+      --accent: #2979ff;
+      --accent-2: #ff8a3d;
+      --accent-3: #6b5cff;
+      --shadow: #2637591f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #090d16;
+        --surface: #121928d9;
+        --surface-strong: #162033;
+        --text: #f4f7ff;
+        --muted: #aab4c7;
+        --line: #ffffff1f;
+        --shadow: #00000066;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, #2979ff24, transparent 34rem),
+        radial-gradient(circle at 92% 10%, #ff8a3d20, transparent 28rem),
+        linear-gradient(180deg, #ffffff40, transparent 18rem),
+        var(--bg);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 36px;
+      align-items: center;
+      padding: 64px 0 42px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      max-width: 720px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -.055em;
+      margin: 14px 0 22px;
+    }
+
+    .lead {
+      font-size: clamp(18px, 3vw, 22px);
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 18px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      font-weight: 700;
+      box-shadow: 0 16px 38px #2979ff30;
+    }
+
+    .button:hover {
+      text-decoration: none;
+    }
+
+    .hero-icon {
+      width: clamp(118px, 18vw, 172px);
+      height: clamp(118px, 18vw, 172px);
+      border-radius: 32px;
+      box-shadow: 0 32px 75px var(--shadow);
+      transform: rotate(3deg);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 22px 0 60px;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 24px 70px var(--shadow);
+    }
+
+    .wide { grid-column: 1 / -1; }
+    h2 { font-size: 26px; margin: 0 0 14px; }
+    h3 { font-size: 18px; margin: 26px 0 6px; }
+    .card p, .card li { color: var(--muted); }
+    ul { padding-left: 20px; }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .pill {
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface-strong);
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .note {
+      padding: 16px 18px;
+      border-left: 3px solid var(--accent-2);
+      border-radius: 10px;
+      background: #ff8a3d16;
+    }
+
+    footer {
+      padding: 8px 0 42px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 760px) {
+      .links { display: none; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 42px;
+      }
+      .hero-icon {
+        grid-row: 1;
+        width: 108px;
+        height: 108px;
+        border-radius: 24px;
+      }
+      .grid, .policy-grid { grid-template-columns: 1fr; }
+      .wide { grid-column: auto; }
+      .card { padding: 22px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <img class="brand-icon" src="assets/app-icon.png" alt="GenreSense app icon">
+        <span>GenreSense</span>
+      </div>
+      <div class="links">
+        <a href="#support">Support</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="eyebrow">GenreSense for iPhone</div>
+        <h1>Hear the music.<br>Explore its genre.</h1>
+        <p class="lead">Official support and privacy information for GenreSense, an iPhone app for music genre recognition and optional song identification.</p>
+        <a class="button" href="mailto:sawyer89757@gmail.com">Contact Support</a>
+      </div>
+      <img class="hero-icon" src="assets/app-icon.png" alt="GenreSense app icon">
+    </header>
+
+    <main class="grid">
+      <section class="card" id="support">
+        <h2>Support</h2>
+        <p>Need help with GenreSense? Email us with your device model, iOS version, and a short description of the problem.</p>
+        <p><strong>Email:</strong><br><a href="mailto:sawyer89757@gmail.com">sawyer89757@gmail.com</a></p>
+        <p>We aim to respond as soon as reasonably possible.</p>
+      </section>
+
+      <section class="card">
+        <h2>Quick tips</h2>
+        <ul>
+          <li>Allow microphone access when prompted.</li>
+          <li>Play music out loud and place your iPhone near the speaker.</li>
+          <li>Headphone or other apps' internal audio cannot be heard by the microphone.</li>
+          <li>Reduce background noise for clearer genre and song recognition results.</li>
+          <li>If a song is identified, you can open it in Apple Music or search for it on supported music services.</li>
+        </ul>
+      </section>
+
+      <section class="card wide" id="privacy">
+        <div class="eyebrow">Last updated June 25, 2026</div>
+        <h2>Privacy Policy</h2>
+        <p>GenreSense is designed to recognize music genres on your device, with optional song identification powered by system music recognition services.</p>
+
+        <div class="policy-grid">
+          <div class="pill">No account required</div>
+          <div class="pill">No advertising SDKs</div>
+          <div class="pill">Genre analysis runs on device</div>
+          <div class="pill">Song matching may use Apple/Shazam services</div>
+        </div>
+
+        <h3>Information we collect</h3>
+        <p>GenreSense does not require an account and does not include advertising or third-party analytics SDKs. We do not collect your microphone recordings, recognition history, genre results, or song recognition history on our own servers.</p>
+
+        <h3>Microphone and audio</h3>
+        <p>Microphone access is used only when you start recognition. Genre recognition audio is analyzed on your device. Recognition clips and history may be saved locally so you can revisit them. They are not uploaded to GenreSense servers.</p>
+
+        <h3>Song identification</h3>
+        <p>When song identification is available, GenreSense uses Apple's ShazamKit and Apple Music services to try to match nearby music and retrieve song metadata. This may involve Apple or Shazam processing an audio-derived signature or recognition request, and Apple Music catalog metadata may be requested for the matched song.</p>
+        <p>Song metadata shown in the app may include the song title, artist, Shazam or Apple Music identifiers, artwork URL, Apple Music URL, preview URL, and genre labels. This metadata may be stored locally with your recognition history so the result can be shown again later.</p>
+
+        <h3>Local data</h3>
+        <p>App preferences, recognition history, explored genres, saved audio clips, and saved song metadata are stored locally on your device. You can remove history within the app or delete the app to remove its locally stored data.</p>
+
+        <h3>Purchases</h3>
+        <p>Optional in-app purchases are processed by Apple through the App Store. GenreSense does not receive or store your payment-card details. Apple's handling of purchase information is governed by Apple's privacy policy.</p>
+
+        <h3>External services and links</h3>
+        <p>GenreSense may open services such as Apple Music, Spotify, YouTube Music, QQ Music, NetEase Cloud Music, Wikipedia, or Wikimedia when you choose a related link or search action. Those services operate under their own privacy policies.</p>
+
+        <h3>Children's privacy</h3>
+        <p>GenreSense does not knowingly collect personal information from children.</p>
+
+        <h3>Changes to this policy</h3>
+        <p>We may update this policy when the app or legal requirements change. The latest version will be published here with its effective date.</p>
+
+        <h3>Contact</h3>
+        <p>Questions about support or privacy can be sent to <a href="mailto:sawyer89757@gmail.com">sawyer89757@gmail.com</a>.</p>
+        <p class="note">Genre and song recognition results are probabilistic and may be affected by recording conditions, background noise, catalog coverage, and overlapping genre traits.</p>
+      </section>
+    </main>
+
+    <footer><p>&copy; 2026 GenreSense. All rights reserved.</p></footer>
+  </div>
+</body>
+</html>
